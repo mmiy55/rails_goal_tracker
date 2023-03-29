@@ -4,19 +4,20 @@ User.destroy_all
 Goal.destroy_all
 
 def create_admin
+  # return the admin if exist (means admin is not nil/falsy )
   return admin if admin = User.find_by(email: 'admin@me.com')
     # create the admin
     admin = User.create!(
       email: 'admin@me.com',
       password: '123123'
     )
-    # # give an AI face to the admin (1/2)
-    # url = 'https://this-person-does-not-exist.com/en'
-    # doc = Nokogiri::HTML(URI.open(url).read)
-    # src = doc.search('#avatar').first['src']
-    # photo_url = "https://this-person-does-not-exist.com#{src}"
-    # file = URI.open(photo_url)
-    # admin.photo.attach(io: file, filename: 'user.png', content_type: 'image/png')
+    # give an AI face to the admin
+    url = 'https://this-person-does-not-exist.com/en'
+    doc = Nokogiri::HTML(URI.open(url).read)
+    src = doc.search('#avatar').first['src']
+    photo_url = "https://this-person-does-not-exist.com#{src}"
+    file = URI.open(photo_url)
+    admin.photo.attach(io: file, filename: 'user.png', content_type: 'image/png')
 end
 
 admin = create_admin
