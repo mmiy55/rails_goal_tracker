@@ -9,6 +9,6 @@ class Goal < ApplicationRecord
   validates :title, presence: true
   validates :category, presence: true, inclusion: { in: categories }
 
-  has_one_attached :photo
+  # has_one_attached :photo
 
 end
