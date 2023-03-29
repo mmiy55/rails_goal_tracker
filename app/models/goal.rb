@@ -4,4 +4,7 @@ class Goal < ApplicationRecord
   # validations
   validates :title, presence: true
   validates :category, presence: true, inclusion: { in: ['health', 'beauty', 'education', 'work', 'relations', 'eco', 'entertainment', 'other'] }
+
+  has_one_attached :photo
+
 end
