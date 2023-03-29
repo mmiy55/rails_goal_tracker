@@ -1,0 +1,10 @@
+<%= simple_form_for(goal) do |f| %>
+  <%= f.input :title, label: 'Goal title' %>
+  <%= f.input :category %>
+  <%= f.input :description %>
+  <%= f.input :deadline %>
+  <%= f.input :frequency %>
+  <%= f.input :measure %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit "Submit", class: 'btn btn-info mt-2' %>
+<% end %>
