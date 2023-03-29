@@ -15,6 +15,10 @@ photo_url = "https://this-person-does-not-exist.com#{src}"
 file = URI.open(photo_url)
 admin.photo.attach(io: file, filename: 'user.png', content_type: 'image/png')
 
+
+# TODO: real seeds
+# TODO: attach photo from unsplash
+
 Goal.create([{
     title: "test.#{rand(0..10)}",
     category: Goal.categories.sample,
