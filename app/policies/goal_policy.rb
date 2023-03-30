@@ -16,7 +16,7 @@ class GoalPolicy < ApplicationPolicy
     end
 
     def update?
-      record == user
+      record.user == user
     end
 
     def destroy?

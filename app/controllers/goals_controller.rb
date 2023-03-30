@@ -1,5 +1,5 @@
 class GoalsController < ApplicationController
-  before_action :set_goal, only: [:update, :destroy]
+  before_action :set_goal, only: [:edit, :update, :destroy]
 
   def index
     # @user_goals = Goal.where(user: current_user) if current_user != admin
@@ -23,9 +23,14 @@ class GoalsController < ApplicationController
     end
   end
 
+  def edit
+    @goal.completed = true
+    # @goal.save
+    redirect_to goals_path
+  end
+
   def update
     # only complete
-    @goal.completed = true
     @goal.save
     redirect_to goals_path
   end
