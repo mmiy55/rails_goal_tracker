@@ -1,12 +1,13 @@
-.navbar-lewagon {
+.navbar-goaltrk {
   justify-content: space-between;
-  background: white;
+  background: var(--bs-primary);
+  // color: var(--bs-body-color);
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-goaltrk .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-goaltrk .navbar-brand img {
   width: 40px;
 }
