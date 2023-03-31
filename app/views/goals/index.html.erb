@@ -1,17 +1,25 @@
 <div class="container mt-3">
-  <h1>Index page</h1>
-        <h1>
-        <%= link_to new_goal_path do %>
-          <i class="fa-solid fa-plus"></i>
-        <% end %>
-        </h1>
+  <h2> Add a new goal
+    <%= link_to new_goal_path do %>
+      <i class="fa-solid fa-plus"></i>
+    <% end %>
+  </h2>
+    <h1>Your current goals:</h1>
       <div class="row">
       <% @goals.each do |goal| %>
         <div class="col">
           <% if goal.user == current_user %>
-            <%= render 'goals/card', goal: goal %>
+            <% if goal.completed == true %>
+              <%= render 'goals/card_completed', goal: goal %>
+            <% else %>
+              <%= render 'goals/card', goal: goal %>
+            <% end %>
           <% else %>
-            <%= render 'goals/card', goal: goal %>
+            <% if goal.completed == true %>
+              <%= render 'goals/card_completed', goal: goal %>
+            <% else %>
+              <%= render 'goals/card', goal: goal %>
+            <% end %>
           <% end %>
       </div>
       <% end %>

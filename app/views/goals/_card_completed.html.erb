@@ -3,13 +3,7 @@
     <h6 class="card-subtitle mb-2 text-muted"><%= goal.id %></h6>
       <p class="card-text"><%= goal.description || "No description" %></p>
         <p class="card-text">User: <%= goal.user.email %></p>
-          <%= link_to edit_goal_path(goal) do %>
-            <p class="card-text">Edit</p>
-          <% end %>
-            <%= link_to complete_goal_path(goal) do %>
-              <p class="card-text">Complete</p>
-            <% end %>
-              <p class="card-text">Completed: <%= goal.completed %></p>
+              <p class="card-text">Completed!Good job!</p>
               <%= link_to goal_path(goal), data: { turbo_method: :delete, turbo_confirm: "Delete #{goal.title}?" } do %>
                 <p>Delete :<i class="fa-regular fa-trash-can"></i></p>
         <% end %>

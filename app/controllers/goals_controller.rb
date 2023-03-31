@@ -1,10 +1,9 @@
 class GoalsController < ApplicationController
-  before_action :set_goal, only: [:edit, :update, :destroy]
+  before_action :set_goal, only: [:complete, :edit, :update, :destroy]
 
   def index
     # @user_goals = Goal.where(user: current_user) if current_user != admin
-    @goals = policy_scope(Goal)
-
+    @goals = policy_scope(Goal).order(:completed, :created_at)
   end
 
   def new
@@ -24,13 +23,16 @@ class GoalsController < ApplicationController
   end
 
   def edit
+  end
+
+  def complete
     @goal.completed = true
-    # @goal.save
+    @goal.save
     redirect_to goals_path
   end
 
   def update
-    # only complete
+    @goal.update(goal_params)
     @goal.save
     redirect_to goals_path
   end
