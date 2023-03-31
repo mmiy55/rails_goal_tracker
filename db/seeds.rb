@@ -20,17 +20,22 @@ admin.photo.attach(io: file, filename: 'user.png', content_type: 'image/png')
 # TODO: attach photo from unsplash
 
 Goal.create([{
-    title: "test.#{rand(0..10)}",
-    category: Goal.categories.sample,
+    title: "Lose weight",
+    category: "health",
     user: admin
 },
 {
-    title: "test.#{rand(0..10)}",
-    category: Goal.categories.sample,
+    title: "Read one book a month",
+    category: "education",
     user: admin
 },
 {
-    title: "test.#{rand(0..10)}",
-    category: Goal.categories.sample,
+    title: "Find a job",
+    category: "career",
+    user: admin
+},
+{
+    title: "Cook",
+    category: "health",
     user: admin
 }])
