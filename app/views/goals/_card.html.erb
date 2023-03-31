@@ -1,14 +1,10 @@
-<div class="goal-card-small justify-content-between">
-
-  <div class="d-flex justify-content-start" >
-    <div class="row justify-content-start">
-       <div class ="col-8 width-450">
-        <h3><b><%= goal.title %></b></h3>
-        <h3><b><%= goal.id %></b></h3>
-
-        <h3><b><%= goal.user.email %></b></h3>
-        <h3><b><%= goal.completed %></b></h3>
-        </div>
-    </div>
-  </div>
+<div class="card p-3" style="width: 18rem;">
+  <h5 class="card-title"><%= goal.title %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= goal.id %></h6>
+      <p class="card-text">Description</p>
+        <p class="card-text">User: <%= goal.user.email %></p>
+          <p class="card-text">Completed: <%= goal.completed %></p>
+            <%= link_to goal_path(goal), class: '', data: { turbo_method: :delete, turbo_confirm: "Delete #{goal.title}?" } do %>
+              <i class="fa-regular fa-trash-can"></i>
+        <% end %>
 </div>
