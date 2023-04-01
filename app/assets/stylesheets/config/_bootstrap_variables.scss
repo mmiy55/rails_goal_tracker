@@ -25,20 +25,10 @@ $border-radius-sm: 2px;
 
 // Override other variables below!
 
-$body-bg:    #FDFCDC;
-$body-color: #0081A7;
-$primary:    #00AFB9;
-// $success:    $green;
+// $body-bg:    #FDFCDC;
+// $body-color: #0081A7;
+$primary:    #0081A7;
+$success:    #00AFB9;
 $info:       #FDFCDC;
 $danger:     #F07167;
 $warning:    #FED9B7;
-
-
-// $custom-colors: (
-//   "bg-color": #FDFCDC;
-
-
-// );
-
-// // Merge the maps
-// $theme-colors: map-merge($theme-colors, $custom-colors);

@@ -1,11 +1,11 @@
-<div class="container mt-3">
+<div class="container p-5 mt-3">
   <h2> Add a new goal
     <%= link_to new_goal_path do %>
       <i class="fa-solid fa-plus"></i>
     <% end %>
   </h2>
     <h1>Your current goals:</h1>
-      <div class="row">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
       <% @goals.each do |goal| %>
         <div class="col">
           <% if goal.user == current_user %>
