@@ -8,15 +8,15 @@
   </h2>
   <div class="goals_tracker-parent">
     <div class="goals-ongoing">
-      <h1>Your current goals:</h1>
+      <div class="title">Your current goals:</div>
         <%= render 'goals/card', goals: @ongoing_goals %>
     </div>
     <div class="goals-completed">
-          <h1>Your completed goals:</h1>
+          <div class="title">Your completed goals:</div>
             <%= render 'goals/card', goals: @completed_goals %>
     </div>
     <div class="goals-progress">
-  <h1><i class="fa-solid fa-list-check"></i> </h1>
+  <div class="title"><i class="fa-solid fa-list-check"></i> </div>
   <%= render 'goals/table', goals: @goals, completed_goals: @completed_goals %>
   </div>
 </div>
