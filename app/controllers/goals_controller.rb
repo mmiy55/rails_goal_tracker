@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class GoalsController < ApplicationController
   before_action :set_goal, only: [:complete, :edit, :update, :destroy]
 
@@ -17,12 +19,14 @@ class GoalsController < ApplicationController
   def create
     @goal = Goal.new(goal_params)
     @goal.user = current_user
+    unless @goal.photo.attached?
+      attach_random_photo(@goal)
+    end
     if @goal.save
       redirect_to goals_path
       authorize @goal
     else
       render :new, status: :unprocessable_entity
-
     end
   end
 
@@ -55,6 +59,12 @@ class GoalsController < ApplicationController
 
   def goal_params
     params.require(:goal).permit(:category, :title, :description, :photo )
+  end
+
+  def attach_random_photo(goal)
+    photo_url = "https://source.unsplash.com/random/240x120/?#{goal.category}"
+    file = URI.open(photo_url)
+    goal.photo.attach(io: file, filename: 'default.png', content_type: 'image/png')
   end
 
 end
