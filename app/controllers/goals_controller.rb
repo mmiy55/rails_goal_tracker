@@ -5,6 +5,8 @@ class GoalsController < ApplicationController
     # @user_goals = Goal.where(user: current_user) if current_user != admin
     # @goals = policy_scope(Goal).order(:completed, :created_at)
     @goals = policy_scope(Goal).where(user: current_user)
+    @completed_goals = @goals.where(completed: true)
+    @ongoing_goals = @goals.where(completed: false)
   end
 
   def new

@@ -1,10 +1,20 @@
-<div class="card p-3 border border-5 border-primary" style="width: 18rem; border-radius: 2.0rem;">
-  <h5 class="card-title"><%= goal.title %></h5>
-    <h6 class="card-subtitle mb-2 text-muted"><%= goal.id %></h6>
-      <p class="card-text"><%= goal.description || "No description" %></p>
-        <p class="card-text">User: <%= goal.user.email %></p>
-              <p class="card-text">Completed!Good job!</p>
-              <%= link_to goal_path(goal), data: { turbo_method: :delete, turbo_confirm: "Delete #{goal.title}?" } do %>
-                <p>Delete :<i class="fa-regular fa-trash-can"></i></p>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+        <% if goals.size > 0 %>
+          <% goals.each do |goal| %>
+          <div class="col">
+            <div class="card p-3 border border-5 border-primary" style="width: 18rem; border-radius: 2.0rem;">
+              <h5 class="card-title"><%= goal.title %></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%= goal.id %></h6>
+                  <p class="card-text"><%= goal.description || "No description" %></p>
+                    <p class="card-text">User: <%= goal.user.email %></p>
+                          <p class="card-text">Completed!Good job!</p>
+                          <%= link_to goal_path(goal), data: { turbo_method: :delete, turbo_confirm: "Delete #{goal.title}?" } do %>
+                            <p>Delete :<i class="fa-regular fa-trash-can"></i></p>
+                    <% end %>
+            </div>
+          </div>
+          <% end %>
+        <% else %>
+          <h2>No current goals</h2>
         <% end %>
 </div>
