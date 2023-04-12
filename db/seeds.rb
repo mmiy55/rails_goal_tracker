@@ -39,3 +39,10 @@ Goal.create([{
     category: "health",
     user: admin
 }])
+
+Goal.all.each do |goal|
+  photo_url = "https://source.unsplash.com/random/240x120/?#{goal.category}"
+  file = URI.open(photo_url)
+  goal.photo.attach(io: file, filename: 'default.png', content_type: 'image/png')
+  goal.save
+end
