@@ -7,23 +7,31 @@
   </h2>
     <h1>Your current goals:</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-      <% @goals.each do |goal| %>
-        <div class="col">
-          <% if goal.user == current_user %>
-            <% if goal.completed == true %>
-              <%= render 'goals/card_completed', goal: goal %>
-            <% else %>
-              <%= render 'goals/card', goal: goal %>
-            <% end %>
-          <% else %>
-            <% if goal.completed == true %>
-              <%= render 'goals/card_completed', goal: goal %>
-            <% else %>
-              <%= render 'goals/card', goal: goal %>
-            <% end %>
+        <% if @goals.where(completed:false).size > 0 %>
+          <% @goals.each do |goal| %>
+          <div class="col">
+              <% if goal.completed != true %>
+                <%= render 'goals/card', goal: goal %>
+              <% end %>
+          </div>
           <% end %>
+        <% else %>
+          <h2>No current goals</h2>
+        <% end %>
       </div>
-      <% end %>
+      <h1>Your completed goals:</h1>
+        <% if @goals.where(completed:true).size > 0 %>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <% @goals.each do |goal| %>
+            <div class="col">
+                <% if goal.completed == true %>
+                  <%= render 'goals/card_completed', goal: goal %>
+                <% end %>
+            </div>
+          <% end %>
+        <% else %>
+          <h2>No completed goals</h2>
+        <% end %>
 </div>
 </div>
 </div>

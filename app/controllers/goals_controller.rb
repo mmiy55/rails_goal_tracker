@@ -3,7 +3,8 @@ class GoalsController < ApplicationController
 
   def index
     # @user_goals = Goal.where(user: current_user) if current_user != admin
-    @goals = policy_scope(Goal).order(:completed, :created_at)
+    # @goals = policy_scope(Goal).order(:completed, :created_at)
+    @goals = policy_scope(Goal).where(user: current_user)
   end
 
   def new
