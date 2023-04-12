@@ -2,9 +2,7 @@
   <%= f.input :title, label: 'Goal title', placeholder:"Give your goal a title here", autofocus: true %>
   <%= f.input :category, :collection => Goal.categories %>
   <%= f.input :description , placeholder:"Describe your goal here"  %>
-  <%# <%= f.input :deadline %>
-  <%# <%= f.input :frequency %>
-  <%# <%= f.input :measure %>
+
   <%= f.input :photo, as: :file %>
   <%= f.submit "Add", class: 'btn btn-primary mt-2 opacity-75' %>
 <% end %>

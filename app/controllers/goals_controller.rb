@@ -20,8 +20,9 @@ class GoalsController < ApplicationController
     if @goal.save
       redirect_to goals_path
       authorize @goal
-    # else
-      #  render
+    else
+      render :new, status: :unprocessable_entity
+
     end
   end
 
