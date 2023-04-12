@@ -1,10 +1,10 @@
 <div class="banner">
-<div class="container">
-<h1>Welcome to Goal tracker</h1>
-<p>set and track your goals</p>
-</div>
-</div>
-<div class="container mt-3">
-<p> Track your
-<%= link_to 'Goals', goals_path %></p>
+  <div class="container">
+    <h1>Welcome to Goal tracker</h1>
+      <p>set and track your
+        <%= link_to goals_path do %>
+          <button type="button" class="btn btn-warning">Goals</button>
+        <% end %>
+      </p>
+    </div>
 </div>
