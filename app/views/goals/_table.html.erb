@@ -1,10 +1,10 @@
 <ul class="list-group" , style="border-radius: 2rem;">
-<li class="list-group-item list-group-item-primary""><h3> Completed goals / Total goals (%) </h3></li>
+<li class="list-group-item list-group-item-primary"">Completed goals / Total goals (%)</li>
   <% goals.pluck(:category).uniq.each do |cat| %>
   <li class="list-group-item">
-    <h3><%= cat %>:</h3>
-      <%= completed_goals.where(category: cat).size %> / <%= goals.where(category: cat).size %>
-       (<%= completed_goals.where(category: cat).size  /  goals.where(category: cat).size * 100 %> %)
+    <%= cat %>:
+      <div><%= completed_goals.where(category: cat).size %> / <%= goals.where(category: cat).size %>
+       (<%= completed_goals.where(category: cat).size  /  goals.where(category: cat).size * 100 %> %)</div>
   </li>
   <% end %>
 </ul>

@@ -8,4 +8,8 @@
 
 .goals_tracker-parent .goals-ongoing { grid-area: 1 / 1 / 2 / 5; }
 .goals_tracker-parent .goals-completed { grid-area: 2 / 1 / 3 / 5; }
-.goals_tracker-parent .goals-progress { grid-area: 1 / 5 / 2 / 6; }
+.goals_tracker-parent .goals-progress {
+  grid-area: 1 / 5 / 2 / 6;
+  text-align: center;
+  position: sticky;
+  top: 0;}
