@@ -4,23 +4,20 @@
           <div class="col">
             <div class="card w-100 h-100 p-3 border border-5 border-warning" style="width: 18rem; border-radius: 2.0rem;">
             <%= image_tag "#{goal.photo.attached? ? cl_image_path(goal.photo.key) : "" }", class:"card-img-top", alt:"..."%>
-
-              <%# <img src="..." class="card-img-top" alt="..."> %>
                 <div class="card-body">
                   <h5 class="card-title"><%= goal.title %></h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><%= goal.id %></h6>
-                    <p class="card-text"><%= goal.description || "No description" %></p>
-                      <p class="card-text">User: <%= goal.user.email %></p>
+                    <p class="card-subtitle mb-2 text-muted"><%= goal.description || "" %></p>
+                      <div class="card-edit-menu">
                         <%= link_to edit_goal_path(goal) do %>
-                          <p class="card-text">Edit</p>
+                          <p class="card-text"><i class="fa-regular fa-pen-to-square"></i></p>
                         <% end %>
                           <%= link_to complete_goal_path(goal) do %>
-                            <p class="card-text">Complete</p>
+                            <p class="card-text"><i class="fa-solid fa-circle-check"></i></p>
                           <% end %>
-                            <p class="card-text">Completed: <%= goal.completed %></p>
                             <%= link_to goal_path(goal), data: { turbo_method: :delete, turbo_confirm: "Delete #{goal.title}?" } do %>
-                              <p>Delete :<i class="fa-regular fa-trash-can"></i></p>
+                              <p><i class="fa-regular fa-trash-can"></i></p>
                             <% end %>
+                      </div>
                 </div>
             </div>
           </div>

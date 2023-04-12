@@ -1,13 +1,24 @@
 <div class="back-img">
 <div class="container p-5 mt-3" style ="background-color:rgba(255, 255, 255, 0.8);">
   <h2> Add a new goal
-    <%= link_to new_goal_path do %>
+
+        <%= link_to new_goal_path do %>
       <i class="fa-solid fa-plus"></i>
     <% end %>
   </h2>
-    <h1>Your current goals:</h1>
-      <%= render 'goals/card', goals: @ongoing_goals %>
-        <h1>Your completed goals:</h1>
-          <%= render 'goals/card', goals: @completed_goals %>
+  <div class="goals_tracker-parent">
+    <div class="goals-ongoing">
+      <h1>Your current goals:</h1>
+        <%= render 'goals/card', goals: @ongoing_goals %>
+    </div>
+    <div class="goals-completed">
+          <h1>Your completed goals:</h1>
+            <%= render 'goals/card', goals: @completed_goals %>
+    </div>
+    <div class="goals-progress">
+  <h1>Your progress: </h1>
+  <%= render 'goals/table', goals: @goals, completed_goals: @completed_goals %>
+  </div>
+</div>
 </div>
 </div>

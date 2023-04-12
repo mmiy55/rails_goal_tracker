@@ -9,6 +9,8 @@ class GoalsController < ApplicationController
     @goals = policy_scope(Goal).where(user: current_user)
     @completed_goals = @goals.where(completed: true)
     @ongoing_goals = @goals.where(completed: false)
+    # raise
+
   end
 
   def new
