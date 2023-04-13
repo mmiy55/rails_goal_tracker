@@ -9,11 +9,11 @@
   </div>
   <div class="goals_tracker-parent">
     <div class="goals-ongoing mb-3">
-      <div class="title mb-3">Your current goals: <i class="fa-solid fa-person-walking"></i></div>
+      <div class="title mb-3"> <i class="fa-solid fa-person-walking"></i> Ongoing: </div>
         <%= render 'goals/card', goals: @ongoing_goals %>
     </div>
     <div class="goals-completed mb-3">
-          <div class="title mb-3">Your completed goals: <i class="fa-solid fa-thumbs-up"></i></div>
+          <div class="title mb-3"><i class="fa-solid fa-thumbs-up"></i> Reached: </div>
             <%= render 'goals/card-completed', goals: @completed_goals %>
     </div>
     <div class="goals-progress">
