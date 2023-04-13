@@ -1,9 +1,10 @@
 .goals_tracker-parent {
   display: grid;
-  // grid-template-columns: repeat(5, 1fr);
+   grid-template-columns: repeat(5, 1fr);
   // grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 12px;
   grid-row-gap: 16px;
+
   }
 
 .goals_tracker-parent .goals-ongoing { grid-area: 1 / 1 / 2 / 5; }

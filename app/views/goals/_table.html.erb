@@ -4,14 +4,13 @@
   </a>
 </p>
   <div class="collapse" id="collapseTracker">
-    <div class="">
+    <div style="min-width:240px;">
       <ul class="list-group" , style="border-radius: 2rem;">
 <li class="list-group-item list-group-item-primary""> Goals Reached / Total (%)</li>
   <% goals.pluck(:category).uniq.each do |cat| %>
   <li class="list-group-item">
     <%= cat %>:
-      <div><%= completed_goals.where(category: cat).size %> / <%= goals.where(category: cat).size %>
-       (<%= (completed_goals.where(category: cat).size.to_f  /  goals.where(category: cat).size.to_f * 100).to_i %> %)</div>
+      <%= completed_goals.where(category: cat).size %> / <%= goals.where(category: cat).size %> (<%= (completed_goals.where(category: cat).size.to_f  /  goals.where(category: cat).size.to_f * 100).to_i %> %)
   </li>
   <% end %>
 </ul>
