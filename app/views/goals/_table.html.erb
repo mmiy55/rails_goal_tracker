@@ -11,7 +11,7 @@
   <li class="list-group-item">
     <%= cat %>:
       <div><%= completed_goals.where(category: cat).size %> / <%= goals.where(category: cat).size %>
-       (<%= completed_goals.where(category: cat).size  /  goals.where(category: cat).size * 100 %> %)</div>
+       (<%= (completed_goals.where(category: cat).size.to_f  /  goals.where(category: cat).size.to_f * 100).to_i %> %)</div>
   </li>
   <% end %>
 </ul>

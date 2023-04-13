@@ -1,18 +1,19 @@
 <div class="back-img">
 <div class="container p-5 mt-3" style ="background-color:rgba(255, 255, 255, 0.8);">
-  <h2> Add a new goal
-
-        <%= link_to new_goal_path do %>
-      <i class="fa-solid fa-plus"></i>
+  <div class="fs-4 mb-3"> Ready to reach a new peak?
+      <div class="btn btn-warning" >
+        <%= link_to new_goal_path, style:"text-decoration:none;" do %>
+      Add <i class="fa-solid fa-plus"></i>
     <% end %>
-  </h2>
+    </div>
+  </div>
   <div class="goals_tracker-parent">
-    <div class="goals-ongoing">
-      <div class="title">Your current goals:</div>
+    <div class="goals-ongoing mb-3">
+      <div class="title mb-3">Your current goals: <i class="fa-solid fa-person-walking"></i></div>
         <%= render 'goals/card', goals: @ongoing_goals %>
     </div>
-    <div class="goals-completed">
-          <div class="title">Your completed goals:</div>
+    <div class="goals-completed mb-3">
+          <div class="title mb-3">Your completed goals: <i class="fa-solid fa-thumbs-up"></i></div>
             <%= render 'goals/card-completed', goals: @completed_goals %>
     </div>
     <div class="goals-progress">
