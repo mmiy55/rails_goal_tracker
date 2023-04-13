@@ -1,8 +1,8 @@
-<div class="cards">
+<div class="row row-cols-1 row-cols-md-2 g-4">
 
         <% if goals.size > 0 %>
           <% goals.each do |goal| %>
-
+          <div class="col">
             <div class="card-custom h-100 text-center border border-5 border-warning" style="width: 18rem; border-radius: 2.0rem;">
             <%= image_tag "#{goal.photo.attached? ? cl_image_path(goal.photo.key) : "" }", class:"card-img-custom mb-2", alt:"..."%>
                 <div class="card-body">
@@ -18,22 +18,25 @@
                               <p><i class="fa-regular fa-trash-can"></i></p>
                             <% end %>
                       </div>
-                    <p>
-                      <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseBody" role="button" aria-expanded="false" aria-controls="collapseBody">
-                        More...
-                      </a>
-                    </p>
-                      <div class="collapse" id="collapseBody">
-                        <div class="card card-body">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item mb-3">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          More..
+                        </button>
+                        </h2>
+
+                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
                           <p>Category: <%= goal.category %></p>
                           <p>Description: <%= goal.description.blank? ? "you can add a description through the pencil mark!" : goal.description %></p>
                         </div>
                       </div>
                     </div>
                     </div>
-
-
-
+                </div>
+            </div>
+          </div>
           <% end %>
         <% else %>
           <h2>No goals here yet!</h2>
