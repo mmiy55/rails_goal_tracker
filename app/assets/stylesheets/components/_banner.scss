@@ -1,4 +1,6 @@
 .banner {
+  display:flex;
+  flex-direction: column;
   background-image: url(https://images.unsplash.com/photo-1584907600887-9732fa3647ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80);
   // background-size: cover;
   background-repeat: no-repeat;
@@ -8,4 +10,11 @@
   color: white;
   padding: 120px 0;
   height: 600px;
+}
+
+.banner-attribution{
+  position: relative;
+  bottom: -340px;
+  right: -16px;
+
 }
