@@ -36,7 +36,7 @@ class GoalsController < ApplicationController
   end
 
   def complete
-    @goal.completed = true
+    @goal.completed = !@goal.completed
     @goal.save
     redirect_to goals_path
   end

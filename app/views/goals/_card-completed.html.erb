@@ -3,7 +3,7 @@
         <% if goals.size > 0 %>
           <% goals.each do |goal| %>
 
-            <div class="card-custom h-100 text-center border border-5 border-warning" style="width: 18rem; border-radius: 2.0rem;">
+            <div class="card-custom h-100 text-center border border-5 border-primary" style="width: 18rem; border-radius: 2.0rem;">
             <%= image_tag "#{goal.photo.attached? ? cl_image_path(goal.photo.key) : "" }", class:"card-img-custom mb-2", alt:"..."%>
                 <div class="card-body">
                   <h5 class="card-title mb-3"><%= goal.title %></h5>
@@ -12,7 +12,7 @@
                           <p class="card-text"><i class="fa-regular fa-pen-to-square"></i> Edit</p>
                         <% end %>
                           <%= link_to complete_goal_path(goal) do %>
-                            <p class="card-text"><i class="fa-solid fa-circle-check"></i> Reached!</p>
+                            <p class="card-text"><i class="fa-solid fa-arrow-rotate-left"></i> Ongoing</p>
                           <% end %>
                             <%= link_to goal_path(goal), data: { turbo_method: :delete, turbo_confirm: "Delete #{goal.title}?" } do %>
                               <p><i class="fa-regular fa-trash-can"></i> Delete</p>
