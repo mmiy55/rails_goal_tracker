@@ -1,11 +1,20 @@
 <div class="back-img">
 <div class="banner">
   <div class="container">
-    <h1>Welcome to Think-Peaks</h1>
-      <p>Set and track your
+    <% if user_signed_in? %>
+    <h1>Welcome back to Think-Peaks, <%= current_user.email.split("@")[0] %></h1>
+      <p>Ready to track your goals?
         <%= link_to goals_path do %>
-          <button type="button" class="btn btn-warning">Goals</button>
+          <button type="button" class="btn btn-warning">Let's Go!</button>
         <% end %>
+    <% else %>
+    <h1>Welcome to Think-Peaks</h1>
+      <p> We help you set and track your goals.
+        <%= link_to new_user_session_path do %>
+          <button type="button" class="btn btn-warning">Log in</button>
+        <% end %>
+    <% end %>
+
 </div>
         <p class="banner-attribution">Photo by Jeremy Bishop on Unsplash</p>
 </div>
