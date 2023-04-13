@@ -3,13 +3,14 @@
         <% if goals.size > 0 %>
           <% goals.each do |goal| %>
 
-            <div class="card-custom h-100 text-center border border-5 border-warning" style="width: 18rem; border-radius: 2.0rem;">
+            <div class="card-layout-parent" style="width: 18rem; border-radius: 2.0rem;">
+              <div class="div1">
+              <%= image_tag "#{goal.photo.attached? ? cl_image_path(goal.photo.key) : "" }", class:"card-img-custom mb-2", alt:"..."%>
+              </div>
+              <div class="div2">
 
-            <%= image_tag "#{goal.photo.attached? ? cl_image_path(goal.photo.key) : "" }", class:"card-img-custom mb-2", alt:"..."%>
-              <div class="card-body">
-                <div class="card-bottom">
-                  <div class="card-title mb-3 p-2 fs-5"><%= goal.title %></div>
-                      <div class="card-edit-menu">
+                  <div class="div3"><%= goal.title %></div>
+                      <div class="div4">
                         <%= link_to edit_goal_path(goal) do %>
                           <p class="card-text"><i class="fa-regular fa-pen-to-square"></i> Edit</p>
                         <% end %>
