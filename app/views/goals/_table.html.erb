@@ -1,4 +1,11 @@
-<ul class="list-group" , style="border-radius: 2rem;">
+<p>
+  <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseTracker" role="button" aria-expanded="false" aria-controls="collapseTracker">
+    Track <i class="fa-solid fa-list-check"></i>
+  </a>
+</p>
+  <div class="collapse" id="collapseTracker">
+    <div class="">
+      <ul class="list-group" , style="border-radius: 2rem;">
 <li class="list-group-item list-group-item-primary"">Completed goals / Total goals (%)</li>
   <% goals.pluck(:category).uniq.each do |cat| %>
   <li class="list-group-item">
@@ -8,3 +15,5 @@
   </li>
   <% end %>
 </ul>
+ </div>
+  </div>
