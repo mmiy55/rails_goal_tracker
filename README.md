@@ -27,13 +27,16 @@ Describe furtherly the goal. The description and category of goal can be seen th
 >Create an account 
 
  Landing Page
-<img width="420" alt="landing" src="https://user-images.githubusercontent.com/70462015/232055388-06885a70-fcfc-493a-8919-a005b6691093.png">
-
+ <br>
+<img width="620" alt="landing" src="https://user-images.githubusercontent.com/70462015/232055388-06885a70-fcfc-493a-8919-a005b6691093.png">
+ <br>
  Sign up (Implemented through Devise)
-<img width="420" alt="login" src="https://user-images.githubusercontent.com/70462015/232055410-3455bfae-0e77-437e-a8c5-cef992b03637.png">
-
- Logged-in home
+ <br>
 <img width="420" alt="signup" src="https://user-images.githubusercontent.com/70462015/232055426-1cb28187-e37f-44d5-ac81-0cb8869b3cf3.png">
+ <br>
+ Logged-in home
+ <br>
+<img width="620" alt="login" src="https://user-images.githubusercontent.com/70462015/232055410-3455bfae-0e77-437e-a8c5-cef992b03637.png">
 
 >Add a goal 
 >Attach a picture to a goal.
