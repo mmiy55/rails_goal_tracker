@@ -3,8 +3,8 @@ require "open-uri"
 User.destroy_all
 Goal.destroy_all
 
-admin = User.find_by(email: 'admin@me.com') || User.create!(
-      email: 'admin@me.com',
+admin = User.find_by(email: 'miriam@me.com') || User.create!(
+      email: 'miriam@me.com',
       password: '123123'
     )
 # give an AI face to the admin
@@ -22,21 +22,25 @@ admin.photo.attach(io: file, filename: 'user.png', content_type: 'image/png')
 Goal.create([{
     title: "Lose weight",
     category: "health",
+    description: "Lose 5kg before Christmas",
     user: admin
 },
 {
-    title: "Read one book a month",
+    title: "Read",
     category: "education",
+    description: "Read one book this month",
     user: admin
 },
 {
     title: "Find a job",
     category: "career",
+    description: "Find a job by the end of the month",
     user: admin
 },
 {
     title: "Cook",
-    category: "health",
+    category: "diet",
+    description: "Cook at least one meal a day",
     user: admin
 }])
 

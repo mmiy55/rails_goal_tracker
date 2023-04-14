@@ -2,7 +2,7 @@ class Goal < ApplicationRecord
   belongs_to :user
 
   def self.categories
-    ['health', 'beauty', 'education', 'career', 'social', 'spiritual', 'eco', 'recreation', 'financial', 'other']
+    ['health', 'diet', 'beauty', 'education', 'career', 'social', 'spiritual', 'eco', 'recreation', 'financial', ' general goal ']
   end
 
   # validations

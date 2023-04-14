@@ -2,7 +2,7 @@
 <div class="banner">
   <div class="container">
     <% if user_signed_in? %>
-    <h1>Welcome back to Think-Peaks, <%= current_user.email.split("@")[0] %></h1>
+    <h1>Welcome back to Think-Peaks, <%= current_user.email.split("@")[0].capitalize %></h1>
       <p>Ready to track your goals?
         <%= link_to goals_path do %>
           <button type="button" class="btn btn-warning">Let's Go!</button>
