@@ -127,4 +127,3 @@ yarn build --watch
 - [Stimulus JS](https://stimulus.hotwired.dev/) - Front-end JS
 - [PostgreSQL](https://www.postgresql.org/) - Database
 - [Bootstrap](https://getbootstrap.com/) — Styling
-- [Figma](https://www.figma.com) — Prototyping
