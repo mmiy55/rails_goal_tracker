@@ -34,7 +34,7 @@ Describe furtherly the goal. The description and category of goal can be seen th
  
 <img width="420" alt="signup" src="https://user-images.githubusercontent.com/70462015/232055426-1cb28187-e37f-44d5-ac81-0cb8869b3cf3.png">
 
- Logged-in home
+##Logged-in home
  
 <img width="620" alt="login" src="https://user-images.githubusercontent.com/70462015/232055410-3455bfae-0e77-437e-a8c5-cef992b03637.png">
 
@@ -53,25 +53,25 @@ Describe furtherly the goal. The description and category of goal can be seen th
 
 <img width="111" alt="reachact" src="https://user-images.githubusercontent.com/70462015/232056809-99181ad8-1a72-4852-bc17-6c35e54d4541.png">
 
-<img width="768" alt="ongoing" src="https://user-images.githubusercontent.com/70462015/232056827-dd29953b-a9bd-49b6-a87d-96d2f2f194a6.png">
+<img width="620" alt="ongoing" src="https://user-images.githubusercontent.com/70462015/232056827-dd29953b-a9bd-49b6-a87d-96d2f2f194a6.png">
 
-<img width="773" alt="reached" src="https://user-images.githubusercontent.com/70462015/232056335-6a0ef406-cc89-4de8-978c-8df76316a5b2.png">
+<img width="620" alt="reached" src="https://user-images.githubusercontent.com/70462015/232056335-6a0ef406-cc89-4de8-978c-8df76316a5b2.png">
 
 >Visualise complete and incomplete goals 
 <img width="266" alt="trackbtn" src="https://user-images.githubusercontent.com/70462015/232056880-35b36395-3ee3-4ff4-836a-d62b68b5c994.png">
-<img width="1146" alt="track" src="https://user-images.githubusercontent.com/70462015/232056885-01673231-e3be-4c4e-9835-c5ce9879c9bd.png">
+<img width="620" alt="track" src="https://user-images.githubusercontent.com/70462015/232056885-01673231-e3be-4c4e-9835-c5ce9879c9bd.png">
 
 
 >Delete a goal"
 
 <br>
-<img width="1143" alt="ong" src="https://user-images.githubusercontent.com/70462015/232057415-10cbf3cc-72a6-41b7-8a41-e1f16fdfdb22.png">
+<img width="620" alt="ong" src="https://user-images.githubusercontent.com/70462015/232057415-10cbf3cc-72a6-41b7-8a41-e1f16fdfdb22.png">
 
 <img width="88" alt="deletebtn" src="https://user-images.githubusercontent.com/70462015/232057420-adb87a95-c408-430c-a7ab-f9d158e79346.png">
 
 <img width="450" alt="delete" src="https://user-images.githubusercontent.com/70462015/232057414-b7a6c050-35a9-4476-985d-1d5ae505a27b.png">
 
-<img width="1146" alt="gone" src="https://user-images.githubusercontent.com/70462015/232057407-accd1611-8d0a-4421-8f2c-029e97d32644.png">
+<img width="620" alt="gone" src="https://user-images.githubusercontent.com/70462015/232057407-accd1611-8d0a-4421-8f2c-029e97d32644.png">
 
 >Edit the contents of a goal
 
