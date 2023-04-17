@@ -54,10 +54,11 @@ Describe furtherly the goal. The description and category of goal can be seen th
 >Update a goal as complete
 
 <img width="111" alt="reachact" src="https://user-images.githubusercontent.com/70462015/232056809-99181ad8-1a72-4852-bc17-6c35e54d4541.png">
+<img width="320" alt="screen" src="https://user-images.githubusercontent.com/70462015/232624525-5e0bfe22-e3e7-4633-a019-c49416a8b75e.png">
 
-<img width="620" alt="ongoing" src="https://user-images.githubusercontent.com/70462015/232056827-dd29953b-a9bd-49b6-a87d-96d2f2f194a6.png">
+<img width="280" alt="Screen Shot 2023-04-18 at 07 29 44" src="https://user-images.githubusercontent.com/70462015/232624545-06d68a20-8ac2-4200-934c-19f654d9f80a.png">
 
-<img width="620" alt="reached" src="https://user-images.githubusercontent.com/70462015/232056335-6a0ef406-cc89-4de8-978c-8df76316a5b2.png">
+
 
 >Visualise complete and incomplete goals 
 <img width="266" alt="trackbtn" src="https://user-images.githubusercontent.com/70462015/232056880-35b36395-3ee3-4ff4-836a-d62b68b5c994.png">
