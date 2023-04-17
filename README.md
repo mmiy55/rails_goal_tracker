@@ -46,8 +46,10 @@ Describe furtherly the goal. The description and category of goal can be seen th
 
 >The description and category of goal can be seen through the About button.
 
-<img width="310" alt="Screen Shot 2023-04-14 at 22 34 41" src="https://user-images.githubusercontent.com/70462015/232059265-1521a3e1-41fe-44b3-939c-e90408d8a7a9.png">
-<img width="312" alt="Screen Shot 2023-04-14 at 22 34 47" src="https://user-images.githubusercontent.com/70462015/232059298-73e264c7-884e-4474-9e9a-69e7a57ce6b7.png">
+
+<img width="280" alt="Screen Shot 2023-04-18 at 07 29 28" src="https://user-images.githubusercontent.com/70462015/232624394-4e17b66a-7f32-40a1-bd30-f587cb2ab82f.png">
+<img width="280" alt="Screen Shot 2023-04-18 at 07 29 06" src="https://user-images.githubusercontent.com/70462015/232624400-26198999-2ecf-4d95-8a60-f23de3d9800e.png">
+
 
 >Update a goal as complete
 
