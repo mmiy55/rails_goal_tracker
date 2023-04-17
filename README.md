@@ -47,6 +47,7 @@ Describe furtherly the goal. The description and category of goal can be seen th
 >The description and category of goal can be seen through the About button.
 
 
+
 <img width="280" alt="Screen Shot 2023-04-18 at 07 29 28" src="https://user-images.githubusercontent.com/70462015/232624394-4e17b66a-7f32-40a1-bd30-f587cb2ab82f.png">
 <img width="280" alt="Screen Shot 2023-04-18 at 07 29 06" src="https://user-images.githubusercontent.com/70462015/232624400-26198999-2ecf-4d95-8a60-f23de3d9800e.png">
 
@@ -61,20 +62,19 @@ Describe furtherly the goal. The description and category of goal can be seen th
 
 
 >Visualise complete and incomplete goals 
+
 <img width="266" alt="trackbtn" src="https://user-images.githubusercontent.com/70462015/232056880-35b36395-3ee3-4ff4-836a-d62b68b5c994.png">
-<img width="620" alt="track" src="https://user-images.githubusercontent.com/70462015/232056885-01673231-e3be-4c4e-9835-c5ce9879c9bd.png">
+
+<img width="298" alt="Screen Shot 2023-04-18 at 07 34 18" src="https://user-images.githubusercontent.com/70462015/232624919-3c4c0fe8-d5af-45b8-ad01-8e4a0a872554.png">
+
+<img width="1436" alt="screen" src="https://user-images.githubusercontent.com/70462015/232624799-4ec98ddf-e95d-45df-9d93-82f0e2ec84ad.png">
 
 
 >Delete a goal"
 
 <br>
-<img width="620" alt="ong" src="https://user-images.githubusercontent.com/70462015/232057415-10cbf3cc-72a6-41b7-8a41-e1f16fdfdb22.png">
 
 <img width="88" alt="deletebtn" src="https://user-images.githubusercontent.com/70462015/232057420-adb87a95-c408-430c-a7ab-f9d158e79346.png">
-
-<img width="450" alt="delete" src="https://user-images.githubusercontent.com/70462015/232057414-b7a6c050-35a9-4476-985d-1d5ae505a27b.png">
-
-<img width="620" alt="gone" src="https://user-images.githubusercontent.com/70462015/232057407-accd1611-8d0a-4421-8f2c-029e97d32644.png">
 
 >Edit the contents of a goal
 
